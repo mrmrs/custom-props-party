@@ -403,18 +403,18 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
       Scale Ratio
       <input type="range" data-variable="--scale" data-unit='number' min="1" max="2" value="2" step='0.1'>
     </label>
-    <section style='display: grid;'>
-      <input type="color" data-variable="--blue-0" value="#000000" />
-      <input type="color" data-variable="--blue-1" value="#000000" />
-      <input type="color" data-variable="--blue-2" value="#000000" />
-      <input type="color" data-variable="--blue-3" value="#000000" />
-      <input type="color" data-variable="--blue-4" value="#000000" />
-      <input type="color" data-variable="--blue-5" value="#000000" />
-      <input type="color" data-variable="--blue-6" value="#000000" />
-      <input type="color" data-variable="--blue-7" value="#000000" />
-      <input type="color" data-variable="--blue-8" value="#000000" />
-      <input type="color" data-variable="--blue-9" value="#000000" />
-      <input type="color" data-variable="--blue-10" value="#000000" />
+    <section style='display: grid; grid-template-columns: repeat(4, 1fr)'>
+      <input type="color" title='--blue-0' data-variable="--blue-0" value="#030b18" />
+      <input type="color" title='--blue-1' data-variable="--blue-1" value="#071e3f" />
+      <input type="color" title='--blue-2' data-variable="--blue-2" value="#0c3166" />
+      <input type="color" title='--blue-3' data-variable="--blue-3" value="#10448d" />
+      <input type="color" title='--blue-4' data-variable="--blue-4" value="#1556b4" />
+      <input type="color" title='--blue-5' data-variable="--blue-5" value="#1969db" />
+      <input type="color" title='--blue-6' data-variable="--blue-6" value="#317fed" />
+      <input type="color" title='--blue-7' data-variable="--blue-7" value="#5797f0" />
+      <input type="color" title='--blue-8' data-variable="--blue-8" value="#7daef4" />
+      <input type="color" title='--blue-9' data-variable="--blue-9" value="#a3c6f7" />
+      <input type="color" title='--blue-1' data-variable="--blue-10" value="#c9ddfa" />
     </section>
   </section>
   <section>
@@ -435,6 +435,24 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
     <option value="var(--gray-9)">--gray-9</option>
     <option value="var(--gray-10)">--gray-10</option>
     <option value="var(--gray-11)">--gray-11</option>
+    <option value="var(--blue-0)">--blue-0</option>
+    <option value="var(--blue-1)">--blue-1</option>
+    <option value="var(--blue-2)">--blue-2</option>
+    <option value="var(--blue-3)">--blue-3</option>
+    <option value="var(--blue-4)">--blue-4</option>
+    <option value="var(--blue-5)">--blue-5</option>
+    <option value="var(--blue-6)">--blue-6</option>
+    <option value="var(--blue-7)">--blue-7</option>
+    <option value="var(--blue-8)">--blue-8</option>
+    <option value="var(--blue-9)">--blue-9</option>
+    <option value="var(--blue-10)">--blue-10</option>
+    <option value="var(--blue-11)">--blue-11</option>
+    <!-- Add as many colors as you need -->
+  </select>
+</label>
+<label>
+  Primary Color
+  <select id="primaryColor" data-variable="--primary">
     <option value="var(--blue-0)">--blue-0</option>
     <option value="var(--blue-1)">--blue-1</option>
     <option value="var(--blue-2)">--blue-2</option>

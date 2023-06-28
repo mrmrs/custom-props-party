@@ -45,6 +45,13 @@
     --line-height-title: 1.25;
     --line-height-solid: 1;
 
+    --heading-1-font-size: undefined;
+    --heading-2-font-size: undefined;
+    --heading-3-font-size: undefined;
+    --heading-4-font-size: undefined;
+    --heading-5-font-size: undefined;
+    --heading-6-font-size: undefined;
+
     /* Colors */
     --tint-0:    hsla(0, 0%, 100%, .035);
     --tint-1:    hsla(0, 0%, 100%, 0.1);
@@ -70,163 +77,162 @@
     --shade-9:    hsla(0, 0%, 0%, 0.16);
     --shade-10:    hsla(0, 0%, 0%, 0.07);
     --shade-11:    hsla(0, 0%, 0%, 0.035);
-    --gray-0: hsl(0, 0%, 0%);
-    --gray-1: hsl(0, 0%, 11.76%);
-    --gray-2: hsl(0, 0%, 20.78%);
-    --gray-3: hsl(0, 0%, 30.2%);
-    --gray-4: hsl(0, 0%, 40%);
-    --gray-5: hsl(0, 0%, 49.8%);
-    --gray-6: hsl(0, 0%, 58.82%);
-    --gray-7: hsl(0, 0%, 67.45%);
-    --gray-8: hsl(0, 0%, 76.08%);
-    --gray-9: hsl(0, 0%, 84.31%);
-    --gray-10: hsl(0, 0%, 92.16%);
-    --gray-11: hsl(0, 0%, 100%);
-    --slate-gray-0: hsl(240, 5.56%, 7.06%);
-    --slate-gray-1: hsl(250, 7.14%, 16.47%);
-    --slate-gray-2: hsl(246, 7.46%, 26.27%);
-    --slate-gray-3: hsl(244.62, 7.03%, 36.27%);
-    --slate-gray-4: hsl(243.75, 6.78%, 46.27%);
-    --slate-gray-5: hsl(243.33, 7.96%, 55.69%);
-    --slate-gray-6: hsl(243.33, 9.89%, 64.31%);
-    --slate-gray-7: hsl(243.53, 12.06%, 72.35%);
-    --slate-gray-8: hsl(244, 14.29%, 79.41%);
-    --slate-gray-9: hsl(245.45, 15.49%, 86.08%);
-    --slate-gray-10: hsl(240, 15%, 92.16%);
-    --slate-gray-11: hsl(240, 11.11%, 98.24%);
-    --blue-0: hsl(247.06, 36.17%, 9.22%);
-    --blue-1: hsl(234.74, 48.72%, 22.94%);
-    --blue-2: hsl(230.47, 58.47%, 35.88%);
-    --blue-3: hsl(228.46, 62.9%, 48.63%);
-    --blue-4: hsl(228.38, 96.95%, 61.37%);
-    --blue-5: hsl(228, 100%, 66.67%);
-    --blue-6: hsl(229.21, 100%, 72.75%);
-    --blue-7: hsl(232.15, 100%, 79.02%);
-    --blue-8: hsl(236.84, 100%, 85.1%);
-    --blue-9: hsl(242.35, 100%, 90%);
-    --blue-10: hsl(248, 100%, 94.12%);
-    --blue-11: hsl(253.33, 100%, 98.24%);
-    --indigo-0: hsl(263.33, 39.13%, 9.02%);
-    --indigo-1: hsl(253.68, 48.72%, 22.94%);
-    --indigo-2: hsl(251.4, 52.63%, 37.25%);
-    --indigo-3: hsl(251.14, 56.45%, 51.37%);
-    --indigo-4: hsl(251.16, 95.56%, 64.71%);
-    --indigo-5: hsl(254.9, 100%, 69.22%);
-    --indigo-6: hsl(259.11, 100%, 73.53%);
-    --indigo-7: hsl(263.78, 100%, 78.24%);
-    --indigo-8: hsl(268.97, 100%, 82.94%);
-    --indigo-9: hsl(273.44, 100%, 88.04%);
-    --indigo-10: hsl(278.33, 100%, 92.94%);
-    --indigo-11: hsl(283.64, 100%, 97.84%);
-    --violet-0: hsl(285, 40%, 9.8%);
-    --violet-1: hsl(283.28, 58.1%, 20.59%);
-    --violet-2: hsl(283.18, 66.46%, 31.57%);
-    --violet-3: hsl(283.2, 69.44%, 42.35%);
-    --violet-4: hsl(283.19, 76.47%, 53.33%);
-    --violet-5: hsl(284.44, 100%, 62.94%);
-    --violet-6: hsl(291.17, 100%, 68.04%);
-    --violet-7: hsl(296.84, 100%, 73.92%);
-    --violet-8: hsl(300, 100%, 80%);
-    --violet-9: hsl(300, 100%, 86.08%);
-    --violet-10: hsl(300, 100%, 91.96%);
-    --violet-11: hsl(300, 100%, 97.65%);
-    --magenta-0: hsl(320, 38.46%, 7.65%);
-    --magenta-1: hsl(318.46, 45.88%, 16.67%);
-    --magenta-2: hsl(316.67, 56.25%, 25.1%);
-    --magenta-3: hsl(315.68, 64.16%, 33.92%);
-    --magenta-4: hsl(314.62, 72.9%, 41.96%);
-    --magenta-5: hsl(313.58, 84.8%, 49.02%);
-    --magenta-6: hsl(315.81, 97.89%, 62.75%);
-    --magenta-7: hsl(317.75, 100%, 72.16%);
-    --magenta-8: hsl(318.29, 100%, 79.41%);
-    --magenta-9: hsl(318.33, 100%, 85.88%);
-    --magenta-10: hsl(319.02, 100%, 91.96%);
-    --magenta-11: hsl(316.36, 100%, 97.84%);
-    --red-0: hsl(13.33, 52.94%, 6.67%);
-    --red-1: hsl(6, 48.78%, 16.08%);
-    --red-2: hsl(4.23, 54.2%, 25.69%);
-    --red-3: hsl(2.88, 57.14%, 35.69%);
-    --red-4: hsl(0.87, 58.47%, 46.27%);
-    --red-5: hsl(0, 79.82%, 57.25%);
-    --red-6: hsl(2.39, 100%, 65.49%);
-    --red-7: hsl(5.75, 100%, 71.37%);
-    --red-8: hsl(7.83, 100%, 77.45%);
-    --red-9: hsl(9.4, 100%, 83.73%);
-    --red-10: hsl(9.8, 100%, 90.39%);
-    --red-11: hsl(12, 100%, 97.06%);
-    --red-orange-0: hsl(20, 67.74%, 6.08%);
-    --red-orange-1: hsl(16.36, 59.46%, 14.51%);
-    --red-orange-2: hsl(15.38, 67.24%, 22.75%);
-    --red-orange-3: hsl(14.74, 71.25%, 31.37%);
-    --red-orange-4: hsl(14.81, 75.49%, 40%);
-    --red-orange-5: hsl(14.39, 78.4%, 49.02%);
-    --red-orange-6: hsl(14.77, 94.31%, 58.63%);
-    --red-orange-7: hsl(15.71, 100%, 67.06%);
-    --red-orange-8: hsl(16.82, 100%, 74.12%);
-    --red-orange-9: hsl(17.68, 100%, 81.37%);
-    --red-orange-10: hsl(18.21, 100%, 89.02%);
-    --red-orange-11: hsl(21.18, 100%, 96.67%);
-    --orange-0: hsl(26.09, 92%, 4.9%);
-    --orange-1: hsl(24.49, 71.01%, 13.53%);
-    --orange-2: hsl(22.14, 75%, 21.96%);
-    --orange-3: hsl(22.93, 81.46%, 29.61%);
-    --orange-4: hsl(24.44, 88.04%, 36.08%);
-    --orange-5: hsl(28.9, 100%, 42.75%);
-    --orange-6: hsl(36.14, 100%, 48.82%);
-    --orange-7: hsl(40.36, 100%, 56.86%);
-    --orange-8: hsl(41.05, 100%, 66.47%);
-    --orange-9: hsl(41.8, 100%, 76.08%);
-    --orange-10: hsl(42, 100%, 86.27%);
-    --orange-11: hsl(40, 100%, 97.06%);
-    --yellow-0: hsl(65, 66.67%, 3.53%);
-    --yellow-1: hsl(65, 42.86%, 10.98%);
-    --yellow-2: hsl(61.3, 53.49%, 16.86%);
-    --yellow-3: hsl(59.17, 63.16%, 22.35%);
-    --yellow-4: hsl(56.54, 73.24%, 27.84%);
-    --yellow-5: hsl(55.03, 90.06%, 31.57%);
-    --yellow-6: hsl(53.36, 100%, 42.55%);
-    --yellow-7: hsl(55.02, 98.37%, 51.96%);
-    --yellow-8: hsl(56.69, 100%, 64.51%);
-    --yellow-9: hsl(58.64, 100%, 74.12%);
-    --yellow-10: hsl(62.17, 100%, 83.73%);
-    --yellow-11: hsl(65.29, 94.44%, 92.94%);
-    --green-0: hsl(145.26, 82.61%, 4.51%);
-    --green-1: hsl(149.09, 55.93%, 11.57%);
-    --green-2: hsl(151.03, 65.91%, 17.25%);
-    --green-3: hsl(151.72, 75.65%, 22.55%);
-    --green-4: hsl(152.54, 86.76%, 26.67%);
-    --green-5: hsl(152.55, 100%, 30%);
-    --green-6: hsl(149.21, 100%, 37.45%);
-    --green-7: hsl(147.48, 100%, 41.96%);
-    --green-8: hsl(145.26, 79.17%, 62.35%);
-    --green-9: hsl(148.62, 81.95%, 73.92%);
-    --green-10: hsl(152.73, 84.62%, 84.71%);
-    --green-11: hsl(156, 100%, 96.08%);
-    --teal-0: hsl(150, 33.33%, 4.71%);
-    --teal-1: hsl(155.29, 29.82%, 11.18%);
-    --teal-2: hsl(155.63, 37.21%, 16.86%);
-    --teal-3: hsl(157.78, 48.21%, 21.96%);
-    --teal-4: hsl(163.96, 80.8%, 24.51%);
-    --teal-5: hsl(167.35, 100%, 28.82%);
-    --teal-6: hsl(168.45, 80.9%, 39.02%);
-    --teal-7: hsl(165.37, 50.62%, 52.35%);
-    --teal-8: hsl(162.32, 51.35%, 63.73%);
-    --teal-9: hsl(159.09, 50.77%, 74.51%);
-    --teal-10: hsl(153.85, 50.65%, 84.9%);
-    --teal-11: hsl(150, 46.15%, 94.9%);
-    --cyan-0: hsl(180, 81.82%, 4.31%);
-    --cyan-1: hsl(181.94, 50.82%, 11.96%);
-    --cyan-2: hsl(182.31, 55.32%, 18.43%);
-    --cyan-3: hsl(181.62, 58.73%, 24.71%);
-    --cyan-4: hsl(181.8, 64.94%, 30.2%);
-    --cyan-5: hsl(182.36, 71.75%, 34.71%);
-    --cyan-6: hsl(182.19, 100%, 37.65%);
-    --cyan-7: hsl(182.27, 86.83%, 47.65%);
-    --cyan-8: hsl(183.04, 81.18%, 66.67%);
-    --cyan-9: hsl(183.53, 79.44%, 79.02%);
-    --cyan-10: hsl(181.2, 78.13%, 87.45%);
-    --cyan-11: hsl(180, 100%, 94.9%);
-    
+      --gray-0: #000000;
+      --gray-1: #1a1a1a;
+      --gray-2: #353535;
+      --gray-3: #4e4e4e;
+      --gray-4: #686868;
+      --gray-5: #808080;
+      --gray-6: #979797;
+      --gray-7: #adadad;
+      --gray-8: #c2c2c2;
+      --gray-9: #d7d7d7;
+      --gray-10: #ebebeb;
+      --gray-11: #ffffff;
+      --slate-gray-0: #0c0c0e;
+      --slate-gray-1: #26262c;
+      --slate-gray-2: #403f49;
+      --slate-gray-3: #595865;
+      --slate-gray-4: #71707f;
+      --slate-gray-5: #878697;
+      --slate-gray-6: #9d9cad;
+      --slate-gray-7: #b1b0c0;
+      --slate-gray-8: #c4c4d0;
+      --slate-gray-9: #d7d6e0;
+      --slate-gray-10: #e8e8ee;
+      --slate-gray-11: #fafafb;
+      --blue-0: #000b1f;
+      --blue-1: #01215e;
+      --blue-2: #033799;
+      --blue-3: #084dcf;
+      --blue-4: #1263fc;
+      --blue-5: #2178ff;
+      --blue-6: #378eff;
+      --blue-7: #53a3ff;
+      --blue-8: #75b8ff;
+      --blue-9: #9acdff;
+      --blue-10: #c3e2ff;
+      --blue-11: #edf6ff;
+      --indigo-0: #0b081f;
+      --indigo-1: #23195e;
+      --indigo-2: #3a2a99;
+      --indigo-3: #523ccf;
+      --indigo-4: #684ffc;
+      --indigo-5: #7e63ff;
+      --indigo-6: #9478ff;
+      --indigo-7: #a88fff;
+      --indigo-8: #bda7ff;
+      --indigo-9: #d0c0ff;
+      --indigo-10: #e4daff;
+      --indigo-11: #f7f4ff;
+      --violet-0: #1a0023;
+      --violet-1: #44015c;
+      --violet-2: #6c0392;
+      --violet-3: #9009c2;
+      --violet-4: #b113eb;
+      --violet-5: #cc22ff;
+      --violet-6: #e138ff;
+      --violet-7: #ef54ff;
+      --violet-8: #f876ff;
+      --violet-9: #fd9bff;
+      --violet-10: #ffc3ff;
+      --violet-11: #ffedff;
+      --magenta-0: #170112;
+      --magenta-1: #410333;
+      --magenta-2: #6b0555;
+      --magenta-3: #960776;
+      --magenta-4: #c00998;
+      --magenta-5: #eb0bb9;
+      --magenta-6: #fc24cd;
+      --magenta-7: #fd4dd6;
+      --magenta-8: #fd76df;
+      --magenta-9: #fe9fe9;
+      --magenta-10: #fec8f2;
+      --magenta-11: #fff0fc;
+      --red-0: #140505;
+      --red-1: #3f0f10;
+      --red-2: #6a191b;
+      --red-3: #942425;
+      --red-4: #bf2e30;
+      --red-5: #ea383b;
+      --red-6: #fe4e51;
+      --red-7: #fe6f71;
+      --red-8: #fe9091;
+      --red-9: #ffb0b1;
+      --red-10: #ffd1d2;
+      --red-11: #fff1f2;
+      --red-orange-0: #140602;
+      --red-orange-1: #3d1407;
+      --red-orange-2: #66210c;
+      --red-orange-3: #8f2f10;
+      --red-orange-4: #b83c15;
+      --red-orange-5: #e24a1a;
+      --red-orange-6: #f66030;
+      --red-orange-7: #f87d56;
+      --red-orange-8: #f99a7d;
+      --red-orange-9: #fbb8a3;
+      --red-orange-10: #fdd5c9;
+      --red-orange-11: #fef3ef;
+      --orange-0: #170a00;
+      --orange-1: #411a05;
+      --orange-2: #692a09;
+      --orange-3: #8e3b0a;
+      --orange-4: #af4c08;
+      --orange-5: #d76a00;
+      --orange-6: #f79700;
+      --orange-7: #ffb70d;
+      --orange-8: #ffc836;
+      --orange-9: #ffd96d;
+      --orange-10: #ffeaac;
+      --orange-11: #fffaf0;
+      --yellow-0: #0d0e01;
+      --yellow-1: #2a2805;
+      --yellow-2: #474308;
+      --yellow-3: #635c0a;
+      --yellow-4: #7e750a;
+      --yellow-5: #998d07;
+      --yellow-6: #d5c200;
+      --yellow-7: #fde90d;
+      --yellow-8: #fff32f;
+      --yellow-9: #fff960;
+      --yellow-10: #fffc9c;
+      --yellow-11: #fbfedc;
+      --green-0: #011409;
+      --green-1: #01311b;
+      --green-2: #024d2d;
+      --green-3: #02683c;
+      --green-4: #018149;
+      --green-5: #009953;
+      --green-6: #00be5c;
+      --green-7: #03d662;
+      --green-8: #50eb94;
+      --green-9: #89f2b8;
+      --green-10: #b9f8d7;
+      --green-11: #ebfff7;
+      --teal-0: #07100c;
+      --teal-1: #13261c;
+      --teal-2: #1c3c2c;
+      --teal-3: #1d533e;
+      --teal-4: #117156;
+      --teal-5: #039474;
+      --teal-6: #11b495;
+      --teal-7: #2bc3a7;
+      --teal-8: #51d1b9;
+      --teal-9: #7fdecc;
+      --teal-10: #b4ebdf;
+      --teal-11: #ecf8f2;
+      --cyan-0: #021313;
+      --cyan-1: #072f30;
+      --cyan-2: #0c4b4d;
+      --cyan-3: #116568;
+      --cyan-4: #147e81;
+      --cyan-5: #169498;
+      --cyan-6: #14b8be;
+      --cyan-7: #1edae2;
+      --cyan-8: #56e8ef;
+      --cyan-9: #9eeff4;
+      --cyan-10: #ccf7f9;
+      --cyan-11: #e5ffff;
     /* Border Radius */
     --border-radius-0: 0px;
     --border-radius-1: 2px;
@@ -249,7 +255,7 @@
     --hue: 224;
     --text: var(--gray-0);
     --background: var(--gray-11);
-    --border-width: 1px
+    --border-width: 1px;
     --border-color: black;
     --color: hsla(var(--hue), 100%, 42%, 100%);
     --primary: var(--blue-5);
@@ -268,6 +274,9 @@
 
     /* Image */
     --image-border-radius: var(--border-radius-0);
+
+    /* Label */
+    --label-font-size: var(--font-size-1);
 
   }
       img { display: block; max-width: 100%; width: 100%; }
@@ -291,17 +300,25 @@
       }
 
       #editor {
+        max-height: 500px;
         font-family: monospace;
         font-size: 10px;
         line-height: 1;
-        border-top: 1px solid;
-        padding: 32px;
+        border-top: 4px solid orange;
+        padding: 16px;
         position: sticky;
         bottom: 0;
         left: 0;
         right: 0;
-        background: rgba(255,255,255,.8);
-        box-shadow: inset 0 0 100% 100% rgba(255,255,255,.5);
+        box-shadow: -16px 0px 16px 8px white;
+        transition: all .5s ease;
+        background-color: rgba(255,255,255,.9);
+        overflow-y: scroll;
+      }
+      #editor:hover {
+        color: rgba(0,0,0,1);
+        background-color: rgba(255,255,255,.8);
+        opacity: 1;
       }
       #editor input { 
           display: block;
@@ -309,13 +326,27 @@
       } 
       #editor label {
           display: block;
-          margin-bottom: 16px;
+          margin-bottom: 8px;
       }
       #editor input[type=color] {
         box-sizing: border-box;
         width: 24px;
         height: 24px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        display: block;
+        box-shadow: 0 0 0 1px white;
+        outline: 0;
+        border-radius: 0;
       }
+        input[type="color"]::-webkit-color-swatch-wrapper {
+            padding: 0;
+        }
+        input[type="color"]::-webkit-color-swatch {
+            border: none;
+            border-radius: 0;
+        }
 
       /* Preview styles */
       .main-header { 
@@ -342,7 +373,7 @@
           display: inline-flex;
           align-items: center;
           font-size: var(--button-font-size);
-          background-color: var(--primary);
+          background-color: var(--button-background-color);
           color: white;
           padding: var(--button-padding-y) var(--button-padding-x);
           border-radius: var(--button-border-radius);
@@ -354,24 +385,54 @@
       }
 
       .button-outline { 
-          display: inline-block;
+          color: var(--button-background-color);
+          line-height: var(--line-height-solid);
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
           font-size: var(--button-font-size);
-          color: var(--button-background-color)
+          background-color: transparent;
           padding: var(--button-padding-y) var(--button-padding-x);
-          box-shadow: inset 0 0 0 var(--button-border-width) var(--button-background-color);
+          border-radius: var(--button-border-radius);
+          transition: all .25s ease;
+          box-shadow: inset 0 0 0 var(--border-width) var(--button-background-color);
+
       }
 
   </style>
   <body>
     <main id='preview'>
+      <section>
+          <div style='padding-top: 128px; background:linear-gradient(45deg, var(--blue-4), var(--magenta-5));'></div>
+          <div style='padding-top: 128px; background:linear-gradient(45deg, var(--blue-2), var(--green-4));'></div>
+      </section>
+      <section style='padding: 16px;'>
+        <h1>Heading level 1</h1>
+        <h2>Heading level 2</h2>
+        <h3>Heading level 3</h3>
+        <h4>Heading level 4</h4>
+        <h5>Heading level 5</h5>
+        <h6>Heading level 6</h6>
+      </section>
+      <section>
+        <label>
+            <span style='display:block;font-size: var(--label-font-size);'>Text input</span>
+            <input type='text' value='' />
+        </label>
+        <label>
+            <span>Password input</span>
+            <input type='password' value='**123**129' />
+        </label>
+      </section>
       <article style='max-width: 80ch;margin: 0 auto; padding: 32px;'>
-        <img src='https://mrmrs.github.io/photos/u/038.jpg' style='border-radius: var(--border-radius); filter:grayscale(100%);mix-blend-mode:multiply; margin-bottom: 16px;'  />
+        <img src='https://mrmrs.github.io/photos/u/038.jpg' style='border-radius: var(--image-border-radius); filter:grayscale(100%);mix-blend-mode:multiply; margin-bottom: 16px;'  />
         <h3 style='font-size: var(--font-size-8); font-weight: 900;'>A headline title</h3>
         <p style='font-size: var(--font-size-5);line-height: var(--line-height-copy);font-family: var(--font-family-secondary);'>
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 </p>
 <code style='display: block; margin-bottom: var(--scale-3);'>npm install --save tachyons</code>
 <a href='#' class='button'>Click here</a>
+<a href='#' class='button-outline'>or here?</a>
       </article>
 
     </main>
@@ -403,18 +464,164 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
       Scale Ratio
       <input type="range" data-variable="--scale" data-unit='number' min="1" max="2" value="2" step='0.1'>
     </label>
-    <section style='display: grid; grid-template-columns: repeat(4, 1fr)'>
-      <input type="color" title='--blue-0' data-variable="--blue-0" value="#030b18" />
-      <input type="color" title='--blue-1' data-variable="--blue-1" value="#071e3f" />
-      <input type="color" title='--blue-2' data-variable="--blue-2" value="#0c3166" />
-      <input type="color" title='--blue-3' data-variable="--blue-3" value="#10448d" />
-      <input type="color" title='--blue-4' data-variable="--blue-4" value="#1556b4" />
-      <input type="color" title='--blue-5' data-variable="--blue-5" value="#1969db" />
-      <input type="color" title='--blue-6' data-variable="--blue-6" value="#317fed" />
-      <input type="color" title='--blue-7' data-variable="--blue-7" value="#5797f0" />
-      <input type="color" title='--blue-8' data-variable="--blue-8" value="#7daef4" />
-      <input type="color" title='--blue-9' data-variable="--blue-9" value="#a3c6f7" />
-      <input type="color" title='--blue-1' data-variable="--blue-10" value="#c9ddfa" />
+    <label>Color system</label>
+    <section style='padding-bottom: 32px; display: grid; grid-template-columns: repeat(12, 1fr)'>
+      <input type="color" title="--gray-0" data-variable="--gray-0" value="#000000" />
+      <input type="color" title="--gray-1" data-variable="--gray-1" value="#1a1a1a" />
+      <input type="color" title="--gray-2" data-variable="--gray-2" value="#353535" />
+      <input type="color" title="--gray-3" data-variable="--gray-3" value="#4e4e4e" />
+      <input type="color" title="--gray-4" data-variable="--gray-4" value="#686868" />
+      <input type="color" title="--gray-5" data-variable="--gray-5" value="#808080" />
+      <input type="color" title="--gray-6" data-variable="--gray-6" value="#979797" />
+      <input type="color" title="--gray-7" data-variable="--gray-7" value="#adadad" />
+      <input type="color" title="--gray-8" data-variable="--gray-8" value="#c2c2c2" />
+      <input type="color" title="--gray-9" data-variable="--gray-9" value="#d7d7d7" />
+      <input type="color" title="--gray-10" data-variable="--gray-10" value="#ebebeb" />
+      <input type="color" title="--gray-11" data-variable="--gray-11" value="#ffffff" />
+      <input type="color" title="--slate-gray-0" data-variable="--slate-gray-0" value="#0c0c0e" />
+      <input type="color" title="--slate-gray-1" data-variable="--slate-gray-1" value="#26262c" />
+      <input type="color" title="--slate-gray-2" data-variable="--slate-gray-2" value="#403f49" />
+      <input type="color" title="--slate-gray-3" data-variable="--slate-gray-3" value="#595865" />
+      <input type="color" title="--slate-gray-4" data-variable="--slate-gray-4" value="#71707f" />
+      <input type="color" title="--slate-gray-5" data-variable="--slate-gray-5" value="#878697" />
+      <input type="color" title="--slate-gray-6" data-variable="--slate-gray-6" value="#9d9cad" />
+      <input type="color" title="--slate-gray-7" data-variable="--slate-gray-7" value="#b1b0c0" />
+      <input type="color" title="--slate-gray-8" data-variable="--slate-gray-8" value="#c4c4d0" />
+      <input type="color" title="--slate-gray-9" data-variable="--slate-gray-9" value="#d7d6e0" />
+      <input type="color" title="--slate-gray-10" data-variable="--slate-gray-10" value="#e8e8ee" />
+      <input type="color" title="--slate-gray-11" data-variable="--slate-gray-11" value="#fafafb" />
+      <input type="color" title="--blue-0" data-variable="--blue-0" value="#000b1f" />
+      <input type="color" title="--blue-1" data-variable="--blue-1" value="#01215e" />
+      <input type="color" title="--blue-2" data-variable="--blue-2" value="#033799" />
+      <input type="color" title="--blue-3" data-variable="--blue-3" value="#084dcf" />
+      <input type="color" title="--blue-4" data-variable="--blue-4" value="#1263fc" />
+      <input type="color" title="--blue-5" data-variable="--blue-5" value="#2178ff" />
+      <input type="color" title="--blue-6" data-variable="--blue-6" value="#378eff" />
+      <input type="color" title="--blue-7" data-variable="--blue-7" value="#53a3ff" />
+      <input type="color" title="--blue-8" data-variable="--blue-8" value="#75b8ff" />
+      <input type="color" title="--blue-9" data-variable="--blue-9" value="#9acdff" />
+      <input type="color" title="--blue-10" data-variable="--blue-10" value="#c3e2ff" />
+      <input type="color" title="--blue-11" data-variable="--blue-11" value="#edf6ff" />
+      <input type="color" title="--indigo-0" data-variable="--indigo-0" value="#0b081f" />
+      <input type="color" title="--indigo-1" data-variable="--indigo-1" value="#23195e" />
+      <input type="color" title="--indigo-2" data-variable="--indigo-2" value="#3a2a99" />
+      <input type="color" title="--indigo-3" data-variable="--indigo-3" value="#523ccf" />
+      <input type="color" title="--indigo-4" data-variable="--indigo-4" value="#684ffc" />
+      <input type="color" title="--indigo-5" data-variable="--indigo-5" value="#7e63ff" />
+      <input type="color" title="--indigo-6" data-variable="--indigo-6" value="#9478ff" />
+      <input type="color" title="--indigo-7" data-variable="--indigo-7" value="#a88fff" />
+      <input type="color" title="--indigo-8" data-variable="--indigo-8" value="#bda7ff" />
+      <input type="color" title="--indigo-9" data-variable="--indigo-9" value="#d0c0ff" />
+      <input type="color" title="--indigo-10" data-variable="--indigo-10" value="#e4daff" />
+      <input type="color" title="--indigo-11" data-variable="--indigo-11" value="#f7f4ff" />
+      <input type="color" title="--violet-0" data-variable="--violet-0" value="#1a0023" />
+      <input type="color" title="--violet-1" data-variable="--violet-1" value="#44015c" />
+      <input type="color" title="--violet-2" data-variable="--violet-2" value="#6c0392" />
+      <input type="color" title="--violet-3" data-variable="--violet-3" value="#9009c2" />
+      <input type="color" title="--violet-4" data-variable="--violet-4" value="#b113eb" />
+      <input type="color" title="--violet-5" data-variable="--violet-5" value="#cc22ff" />
+      <input type="color" title="--violet-6" data-variable="--violet-6" value="#e138ff" />
+      <input type="color" title="--violet-7" data-variable="--violet-7" value="#ef54ff" />
+      <input type="color" title="--violet-8" data-variable="--violet-8" value="#f876ff" />
+      <input type="color" title="--violet-9" data-variable="--violet-9" value="#fd9bff" />
+      <input type="color" title="--violet-10" data-variable="--violet-10" value="#ffc3ff" />
+      <input type="color" title="--violet-11" data-variable="--violet-11" value="#ffedff" />
+      <input type="color" title="--magenta-0" data-variable="--magenta-0" value="#170112" />
+      <input type="color" title="--magenta-1" data-variable="--magenta-1" value="#410333" />
+      <input type="color" title="--magenta-2" data-variable="--magenta-2" value="#6b0555" />
+      <input type="color" title="--magenta-3" data-variable="--magenta-3" value="#960776" />
+      <input type="color" title="--magenta-4" data-variable="--magenta-4" value="#c00998" />
+      <input type="color" title="--magenta-5" data-variable="--magenta-5" value="#eb0bb9" />
+      <input type="color" title="--magenta-6" data-variable="--magenta-6" value="#fc24cd" />
+      <input type="color" title="--magenta-7" data-variable="--magenta-7" value="#fd4dd6" />
+      <input type="color" title="--magenta-8" data-variable="--magenta-8" value="#fd76df" />
+      <input type="color" title="--magenta-9" data-variable="--magenta-9" value="#fe9fe9" />
+      <input type="color" title="--magenta-10" data-variable="--magenta-10" value="#fec8f2" />
+      <input type="color" title="--magenta-11" data-variable="--magenta-11" value="#fff0fc" />
+      <input type="color" title="--red-0" data-variable="--red-0" value="#140505" />
+      <input type="color" title="--red-1" data-variable="--red-1" value="#3f0f10" />
+      <input type="color" title="--red-2" data-variable="--red-2" value="#6a191b" />
+      <input type="color" title="--red-3" data-variable="--red-3" value="#942425" />
+      <input type="color" title="--red-4" data-variable="--red-4" value="#bf2e30" />
+      <input type="color" title="--red-5" data-variable="--red-5" value="#ea383b" />
+      <input type="color" title="--red-6" data-variable="--red-6" value="#fe4e51" />
+      <input type="color" title="--red-7" data-variable="--red-7" value="#fe6f71" />
+      <input type="color" title="--red-8" data-variable="--red-8" value="#fe9091" />
+      <input type="color" title="--red-9" data-variable="--red-9" value="#ffb0b1" />
+      <input type="color" title="--red-10" data-variable="--red-10" value="#ffd1d2" />
+      <input type="color" title="--red-11" data-variable="--red-11" value="#fff1f2" />
+      <input type="color" title="--red-orange-0" data-variable="--red-orange-0" value="#140602" />
+      <input type="color" title="--red-orange-1" data-variable="--red-orange-1" value="#3d1407" />
+      <input type="color" title="--red-orange-2" data-variable="--red-orange-2" value="#66210c" />
+      <input type="color" title="--red-orange-3" data-variable="--red-orange-3" value="#8f2f10" />
+      <input type="color" title="--red-orange-4" data-variable="--red-orange-4" value="#b83c15" />
+      <input type="color" title="--red-orange-5" data-variable="--red-orange-5" value="#e24a1a" />
+      <input type="color" title="--red-orange-6" data-variable="--red-orange-6" value="#f66030" />
+      <input type="color" title="--red-orange-7" data-variable="--red-orange-7" value="#f87d56" />
+      <input type="color" title="--red-orange-8" data-variable="--red-orange-8" value="#f99a7d" />
+      <input type="color" title="--red-orange-9" data-variable="--red-orange-9" value="#fbb8a3" />
+      <input type="color" title="--red-orange-10" data-variable="--red-orange-10" value="#fdd5c9" />
+      <input type="color" title="--red-orange-11" data-variable="--red-orange-11" value="#fef3ef" />
+      <input type="color" title="--orange-0" data-variable="--orange-0" value="#170a00" />
+      <input type="color" title="--orange-1" data-variable="--orange-1" value="#411a05" />
+      <input type="color" title="--orange-2" data-variable="--orange-2" value="#692a09" />
+      <input type="color" title="--orange-3" data-variable="--orange-3" value="#8e3b0a" />
+      <input type="color" title="--orange-4" data-variable="--orange-4" value="#af4c08" />
+      <input type="color" title="--orange-5" data-variable="--orange-5" value="#d76a00" />
+      <input type="color" title="--orange-6" data-variable="--orange-6" value="#f79700" />
+      <input type="color" title="--orange-7" data-variable="--orange-7" value="#ffb70d" />
+      <input type="color" title="--orange-8" data-variable="--orange-8" value="#ffc836" />
+      <input type="color" title="--orange-9" data-variable="--orange-9" value="#ffd96d" />
+      <input type="color" title="--orange-10" data-variable="--orange-10" value="#ffeaac" />
+      <input type="color" title="--orange-11" data-variable="--orange-11" value="#fffaf0" />
+      <input type="color" title="--yellow-0" data-variable="--yellow-0" value="#0d0e01" />
+      <input type="color" title="--yellow-1" data-variable="--yellow-1" value="#2a2805" />
+      <input type="color" title="--yellow-2" data-variable="--yellow-2" value="#474308" />
+      <input type="color" title="--yellow-3" data-variable="--yellow-3" value="#635c0a" />
+      <input type="color" title="--yellow-4" data-variable="--yellow-4" value="#7e750a" />
+      <input type="color" title="--yellow-5" data-variable="--yellow-5" value="#998d07" />
+      <input type="color" title="--yellow-6" data-variable="--yellow-6" value="#d5c200" />
+      <input type="color" title="--yellow-7" data-variable="--yellow-7" value="#fde90d" />
+      <input type="color" title="--yellow-8" data-variable="--yellow-8" value="#fff32f" />
+      <input type="color" title="--yellow-9" data-variable="--yellow-9" value="#fff960" />
+      <input type="color" title="--yellow-10" data-variable="--yellow-10" value="#fffc9c" />
+      <input type="color" title="--yellow-11" data-variable="--yellow-11" value="#fbfedc" />
+      <input type="color" title="--green-0" data-variable="--green-0" value="#011409" />
+      <input type="color" title="--green-1" data-variable="--green-1" value="#01311b" />
+      <input type="color" title="--green-2" data-variable="--green-2" value="#024d2d" />
+      <input type="color" title="--green-3" data-variable="--green-3" value="#02683c" />
+      <input type="color" title="--green-4" data-variable="--green-4" value="#018149" />
+      <input type="color" title="--green-5" data-variable="--green-5" value="#009953" />
+      <input type="color" title="--green-6" data-variable="--green-6" value="#00be5c" />
+      <input type="color" title="--green-7" data-variable="--green-7" value="#03d662" />
+      <input type="color" title="--green-8" data-variable="--green-8" value="#50eb94" />
+      <input type="color" title="--green-9" data-variable="--green-9" value="#89f2b8" />
+      <input type="color" title="--green-10" data-variable="--green-10" value="#b9f8d7" />
+      <input type="color" title="--green-11" data-variable="--green-11" value="#ebfff7" />
+      <input type="color" title="--teal-0" data-variable="--teal-0" value="#07100c" />
+      <input type="color" title="--teal-1" data-variable="--teal-1" value="#13261c" />
+      <input type="color" title="--teal-2" data-variable="--teal-2" value="#1c3c2c" />
+      <input type="color" title="--teal-3" data-variable="--teal-3" value="#1d533e" />
+      <input type="color" title="--teal-4" data-variable="--teal-4" value="#117156" />
+      <input type="color" title="--teal-5" data-variable="--teal-5" value="#039474" />
+      <input type="color" title="--teal-6" data-variable="--teal-6" value="#11b495" />
+      <input type="color" title="--teal-7" data-variable="--teal-7" value="#2bc3a7" />
+      <input type="color" title="--teal-8" data-variable="--teal-8" value="#51d1b9" />
+      <input type="color" title="--teal-9" data-variable="--teal-9" value="#7fdecc" />
+      <input type="color" title="--teal-10" data-variable="--teal-10" value="#b4ebdf" />
+      <input type="color" title="--teal-11" data-variable="--teal-11" value="#ecf8f2" />
+      <input type="color" title="--cyan-0" data-variable="--cyan-0" value="#021313" />
+      <input type="color" title="--cyan-1" data-variable="--cyan-1" value="#072f30" />
+      <input type="color" title="--cyan-2" data-variable="--cyan-2" value="#0c4b4d" />
+      <input type="color" title="--cyan-3" data-variable="--cyan-3" value="#116568" />
+      <input type="color" title="--cyan-4" data-variable="--cyan-4" value="#147e81" />
+      <input type="color" title="--cyan-5" data-variable="--cyan-5" value="#169498" />
+      <input type="color" title="--cyan-6" data-variable="--cyan-6" value="#14b8be" />
+      <input type="color" title="--cyan-7" data-variable="--cyan-7" value="#1edae2" />
+      <input type="color" title="--cyan-8" data-variable="--cyan-8" value="#56e8ef" />
+      <input type="color" title="--cyan-9" data-variable="--cyan-9" value="#9eeff4" />
+      <input type="color" title="--cyan-10" data-variable="--cyan-10" value="#ccf7f9" />
+      <input type="color" title="--cyan-11" data-variable="--cyan-11" value="#e5ffff" />
     </section>
   </section>
   <section>
@@ -451,7 +658,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
   </select>
 </label>
 <label>
-  Primary Color
+  Primary 
   <select id="primaryColor" data-variable="--primary">
     <option value="var(--blue-0)">--blue-0</option>
     <option value="var(--blue-1)">--blue-1</option>
@@ -465,12 +672,108 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
     <option value="var(--blue-9)">--blue-9</option>
     <option value="var(--blue-10)">--blue-10</option>
     <option value="var(--blue-11)">--blue-11</option>
+    <option value="var(--indigo-0)">--blue-0</option>
+    <option value="var(--indigo-1)">--blue-1</option>
+    <option value="var(--indigo-2)">--blue-2</option>
+    <option value="var(--indigo-3)">--blue-3</option>
+    <option value="var(--indigo-4)">--blue-4</option>
+    <option value="var(--indigo-5)">--blue-5</option>
+    <option value="var(--indigo-6)">--blue-6</option>
+    <option value="var(--indigo-7)">--blue-7</option>
+    <option value="var(--indigo-8)">--blue-8</option>
+    <option value="var(--indigo-9)">--blue-9</option>
+    <option value="var(--indigo-10)">--blue-10</option>
+    <option value="var(--indigo-11)">--blue-11</option>
+    <option value="var(--violet-0)">--blue-0</option>
+    <option value="var(--violet-1)">--blue-1</option>
+    <option value="var(--violet-2)">--blue-2</option>
+    <option value="var(--violet-3)">--blue-3</option>
+    <option value="var(--violet-4)">--blue-4</option>
+    <option value="var(--violet-5)">--blue-5</option>
+    <option value="var(--violet-6)">--blue-6</option>
+    <option value="var(--violet-7)">--blue-7</option>
+    <option value="var(--violet-8)">--blue-8</option>
+    <option value="var(--violet-9)">--blue-9</option>
+    <option value="var(--violet-10)">--blue-10</option>
+    <option value="var(--violet-11)">--blue-11</option>
+    <option value="var(--magenta-0)">--blue-0</option>
+    <option value="var(--magenta-1)">--blue-1</option>
+    <option value="var(--magenta-2)">--blue-2</option>
+    <option value="var(--magenta-3)">--blue-3</option>
+    <option value="var(--magenta-4)">--blue-4</option>
+    <option value="var(--magenta-5)">--blue-5</option>
+    <option value="var(--magenta-6)">--blue-6</option>
+    <option value="var(--magenta-7)">--blue-7</option>
+    <option value="var(--magenta-8)">--blue-8</option>
+    <option value="var(--magenta-9)">--blue-9</option>
+    <option value="var(--magenta-10)">--blue-10</option>
+    <option value="var(--magenta-11)">--blue-11</option>
+    <option value="var(--red-0)">--blue-0</option>
+    <option value="var(--red-1)">--blue-1</option>
+    <option value="var(--red-2)">--blue-2</option>
+    <option value="var(--red-3)">--blue-3</option>
+    <option value="var(--red-4)">--blue-4</option>
+    <option value="var(--red-5)">--blue-5</option>
+    <option value="var(--red-6)">--blue-6</option>
+    <option value="var(--red-7)">--blue-7</option>
+    <option value="var(--red-8)">--blue-8</option>
+    <option value="var(--red-9)">--blue-9</option>
+    <option value="var(--red-10)">--blue-10</option>
+    <option value="var(--red-11)">--blue-11</option>
+    <option value="var(--red-orange-0)">--blue-0</option>
+    <option value="var(--red-orange-1)">--blue-1</option>
+    <option value="var(--red-orange-2)">--blue-2</option>
+    <option value="var(--red-orange-3)">--blue-3</option>
+    <option value="var(--red-orange-4)">--blue-4</option>
+    <option value="var(--red-orange-5)">--blue-5</option>
+    <option value="var(--red-orange-6)">--blue-6</option>
+    <option value="var(--red-orange-7)">--blue-7</option>
+    <option value="var(--red-orange-8)">--blue-8</option>
+    <option value="var(--red-orange-9)">--blue-9</option>
+    <option value="var(--red-orange-10)">--blue-10</option>
+    <option value="var(--red-orange-11)">--blue-11</option>
+    <option value="var(--orange-0)">--blue-0</option>
+    <option value="var(--orange-1)">--blue-1</option>
+    <option value="var(--orange-2)">--blue-2</option>
+    <option value="var(--orange-3)">--blue-3</option>
+    <option value="var(--orange-4)">--blue-4</option>
+    <option value="var(--orange-5)">--blue-5</option>
+    <option value="var(--orange-6)">--blue-6</option>
+    <option value="var(--orange-7)">--blue-7</option>
+    <option value="var(--orange-8)">--blue-8</option>
+    <option value="var(--orange-9)">--blue-9</option>
+    <option value="var(--orange-10)">--blue-10</option>
+    <option value="var(--orange-11)">--blue-11</option>
+    <option value="var(--yellow-0)">--yellow-0</option>
+    <option value="var(--yellow-1)">--yellow-1</option>
+    <option value="var(--yellow-2)">--yellow-2</option>
+    <option value="var(--yellow-3)">--yellow-3</option>
+    <option value="var(--yellow-4)">--yellow-4</option>
+    <option value="var(--yellow-5)">--yellow-5</option>
+    <option value="var(--yellow-6)">--yellow-6</option>
+    <option value="var(--yellow-7)">--yellow-7</option>
+    <option value="var(--yellow-8)">--yellow-8</option>
+    <option value="var(--yellow-9)">--yellow-9</option>
+    <option value="var(--yellow-10)">--yellow-10</option>
+    <option value="var(--yellow-11)">--yellow-11</option>
+    <option value="var(--green-0)">--green-0</option>
+    <option value="var(--green-1)">--green-1</option>
+    <option value="var(--green-2)">--green-2</option>
+    <option value="var(--green-3)">--green-3</option>
+    <option value="var(--green-4)">--green-4</option>
+    <option value="var(--green-5)">--green-5</option>
+    <option value="var(--green-6)">--green-6</option>
+    <option value="var(--green-7)">--green-7</option>
+    <option value="var(--green-8)">--green-8</option>
+    <option value="var(--green-9)">--green-9</option>
+    <option value="var(--green-10)">--green-10</option>
+    <option value="var(--green-11)">--green-11</option>
     <!-- Add as many colors as you need -->
   </select>
 </label>
   <!-- Colors -->
   <label>
-    Text Color
+    Text
     <input type="color" data-variable="--text" value="#000000" />
   </label>
   <label>
@@ -480,7 +783,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
   <!-- Border Radius -->
   <label>
     Border Radius
-    <input type="range" data-variable="--border-radius" data-unit='px' min="0" max="64" value="6" step='1' />
+    <input type="range" data-variable="--image-border-radius" data-unit='px' min="0" max="64" value="6" step='1' />
   </label>
 
   </section>
@@ -488,10 +791,11 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 </div>
 <script type='text/javascript'>
 
+
 const inputs = document.querySelectorAll('#editor input, #editor select');
 
 inputs.forEach(input => {
-  input.addEventListener('change', function() {
+  input.addEventListener('input', function() {
     // If the input type is range or has a data-unit, add the unit to the value
     const suffix = this.dataset.unit || '';
     
@@ -505,6 +809,7 @@ inputs.forEach(input => {
     document.documentElement.style.setProperty(cssVariable, value);
   });
 });
+
 </script>
 </body> 
 </html>

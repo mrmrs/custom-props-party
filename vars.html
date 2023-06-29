@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+  :root {
+
+    /* Colors */
+    --tint-0:    hsla(0, 0%, 100%, .035);
+    --tint-1:    hsla(0, 0%, 100%, 0.1);
+    --tint-2:    hsla(0, 0%, 100%, 0.19);
+    --tint-3:    hsla(0, 0%, 100%, .28);
+    --tint-4:    hsla(0, 0%, 100%, 0.36);
+    --tint-5:    hsla(0, 0%, 100%, 0.45);
+    --tint-6:    hsla(0, 0%, 100%, .55);
+    --tint-7:    hsla(0, 0%, 100%, 0.64);
+    --tint-8:    hsla(0, 0%, 100%, .73);
+    --tint-9:    hsla(0, 0%, 100%, .815);
+    --tint-10:   hsla(0, 0%, 100%, .895);
+    --tint-11:   hsla(0, 0%, 100%, .94);
+    --shade-0:    hsla(0, 0%, 0%, 0.94);
+    --shade-1:    hsla(0, 0%, 0%, 0.899);
+    --shade-2:    hsla(0, 0%, 0%, 0.8);
+    --shade-3:    hsla(0, 0%, 0%, 0.69);
+    --shade-4:    hsla(0, 0%, 0%, 0.6);
+    --shade-5:    hsla(0, 0%, 0%, 0.5);
+    --shade-6:    hsla(0, 0%, 0%, 0.41);
+    --shade-7:    hsla(0, 0%, 0%, 0.32);
+    --shade-8:    hsla(0, 0%, 0%, 0.24);
+    --shade-9:    hsla(0, 0%, 0%, 0.16);
+    --shade-10:    hsla(0, 0%, 0%, 0.07);
+    --shade-11:    hsla(0, 0%, 0%, 0.035);
+      --gray-0: #000000;
+      --gray-1: #1a1a1a;
+      --gray-2: #353535;
+      --gray-3: #4e4e4e;
+      --gray-4: #686868;
+      --gray-5: #808080;
+      --gray-6: #979797;
+      --gray-7: #adadad;
+      --gray-8: #c2c2c2;
+      --gray-9: #d7d7d7;
+      --gray-10: #ebebeb;
+      --gray-11: #ffffff;
+      --slate-gray-0: #0c0c0e;
+      --slate-gray-1: #26262c;
+      --slate-gray-2: #403f49;
+      --slate-gray-3: #595865;
+      --slate-gray-4: #71707f;
+      --slate-gray-5: #878697;
+      --slate-gray-6: #9d9cad;
+      --slate-gray-7: #b1b0c0;
+      --slate-gray-8: #c4c4d0;
+      --slate-gray-9: #d7d6e0;
+      --slate-gray-10: #e8e8ee;
+      --slate-gray-11: #fafafb;
+      --blue-0: #000b1f;
+      --blue-1: #01215e;
+      --blue-2: #033799;
+      --blue-3: #084dcf;
+      --blue-4: #1263fc;
+      --blue-5: #2178ff;
+      --blue-6: #378eff;
+      --blue-7: #53a3ff;
+      --blue-8: #75b8ff;
+      --blue-9: #9acdff;
+      --blue-10: #c3e2ff;
+      --blue-11: #edf6ff;
+      --indigo-0: #0b081f;
+      --indigo-1: #23195e;
+      --indigo-2: #3a2a99;
+      --indigo-3: #523ccf;
+      --indigo-4: #684ffc;
+      --indigo-5: #7e63ff;
+      --indigo-6: #9478ff;
+      --indigo-7: #a88fff;
+      --indigo-8: #bda7ff;
+      --indigo-9: #d0c0ff;
+      --indigo-10: #e4daff;
+      --indigo-11: #f7f4ff;
+      --violet-0: #1a0023;
+      --violet-1: #44015c;
+      --violet-2: #6c0392;
+      --violet-3: #9009c2;
+      --violet-4: #b113eb;
+      --violet-5: #cc22ff;
+      --violet-6: #e138ff;
+      --violet-7: #ef54ff;
+      --violet-8: #f876ff;
+      --violet-9: #fd9bff;
+      --violet-10: #ffc3ff;
+      --violet-11: #ffedff;
+      --magenta-0: #170112;
+      --magenta-1: #410333;
+      --magenta-2: #6b0555;
+      --magenta-3: #960776;
+      --magenta-4: #c00998;
+      --magenta-5: #eb0bb9;
+      --magenta-6: #fc24cd;
+      --magenta-7: #fd4dd6;
+      --magenta-8: #fd76df;
+      --magenta-9: #fe9fe9;
+      --magenta-10: #fec8f2;
+      --magenta-11: #fff0fc;
+      --red-0: #140505;
+      --red-1: #3f0f10;
+      --red-2: #6a191b;
+      --red-3: #942425;
+      --red-4: #bf2e30;
+      --red-5: #ea383b;
+      --red-6: #fe4e51;
+      --red-7: #fe6f71;
+      --red-8: #fe9091;
+      --red-9: #ffb0b1;
+      --red-10: #ffd1d2;
+      --red-11: #fff1f2;
+      --red-orange-0: #140602;
+      --red-orange-1: #3d1407;
+      --red-orange-2: #66210c;
+      --red-orange-3: #8f2f10;
+      --red-orange-4: #b83c15;
+      --red-orange-5: #e24a1a;
+      --red-orange-6: #f66030;
+      --red-orange-7: #f87d56;
+      --red-orange-8: #f99a7d;
+      --red-orange-9: #fbb8a3;
+      --red-orange-10: #fdd5c9;
+      --red-orange-11: #fef3ef;
+      --orange-0: #170a00;
+      --orange-1: #411a05;
+      --orange-2: #692a09;
+      --orange-3: #8e3b0a;
+      --orange-4: #af4c08;
+      --orange-5: #d76a00;
+      --orange-6: #f79700;
+      --orange-7: #ffb70d;
+      --orange-8: #ffc836;
+      --orange-9: #ffd96d;
+      --orange-10: #ffeaac;
+      --orange-11: #fffaf0;
+      --yellow-0: #0d0e01;
+      --yellow-1: #2a2805;
+      --yellow-2: #474308;
+      --yellow-3: #635c0a;
+      --yellow-4: #7e750a;
+      --yellow-5: #998d07;
+      --yellow-6: #d5c200;
+      --yellow-7: #fde90d;
+      --yellow-8: #fff32f;
+      --yellow-9: #fff960;
+      --yellow-10: #fffc9c;
+      --yellow-11: #fbfedc;
+      --green-0: #011409;
+      --green-1: #01311b;
+      --green-2: #024d2d;
+      --green-3: #02683c;
+      --green-4: #018149;
+      --green-5: #009953;
+      --green-6: #00be5c;
+      --green-7: #03d662;
+      --green-8: #50eb94;
+      --green-9: #89f2b8;
+      --green-10: #b9f8d7;
+      --green-11: #ebfff7;
+      --teal-0: #07100c;
+      --teal-1: #13261c;
+      --teal-2: #1c3c2c;
+      --teal-3: #1d533e;
+      --teal-4: #117156;
+      --teal-5: #039474;
+      --teal-6: #11b495;
+      --teal-7: #2bc3a7;
+      --teal-8: #51d1b9;
+      --teal-9: #7fdecc;
+      --teal-10: #b4ebdf;
+      --teal-11: #ecf8f2;
+      --cyan-0: #021313;
+      --cyan-1: #072f30;
+      --cyan-2: #0c4b4d;
+      --cyan-3: #116568;
+      --cyan-4: #147e81;
+      --cyan-5: #169498;
+      --cyan-6: #14b8be;
+      --cyan-7: #1edae2;
+      --cyan-8: #56e8ef;
+      --cyan-9: #9eeff4;
+      --cyan-10: #ccf7f9;
+      --cyan-11: #e5ffff;
+
+    /* Scale */
+    --base-unit: 8px;
+    --scale: 2;
+
+    /* Spacing Scale */
+    --scale-0: 0;
+    --scale-1: calc(0.25 * var(--scale) * var(--base-unit)); /* 4px */
+    --scale-2: calc(0.5 * var(--scale) * var(--base-unit)); /* 8px */
+    --scale-3: calc(1 *   var(--scale) * var(--base-unit)); /* 8px */
+    --scale-4: calc(2 *   var(--scale) * var(--base-unit)); /* 16px */
+    --scale-5: calc(4 *   var(--scale) * var(--base-unit)); /* 32px */
+    --scale-6: calc(8 *   var(--scale) * var(--base-unit)); /* 64px */
+    --scale-7: calc(16 *   var(--scale) * var(--base-unit)); /* 128px */
+    --scale-8: calc(32 *   var(--scale) * var(--base-unit)); /* 256px */
+    --scale-9: calc(64 *   var(--scale) * var(--base-unit)); /* 512px */
+
+    /* Font Families */
+    --font-family-primary: 'Helvetica', sans-serif;
+    --font-family-secondary: 'Baskerville', serif;
+    --font-family-mono: 'Courier New', monospace;
+   
+    /* Type Scale */
+    --font-size-1: 10px;
+    --font-size-2: 12px;
+    --font-size-3: 14px;
+    --font-size-4: 16px;
+    --font-size-5: 20px;
+    --font-size-6: 24px;
+    --font-size-7: 32px;
+    --font-size-8: 48px;
+    --font-size-9: 64px;
+    --font-size-10: 96px;
+    --font-size-11: 128px;
+    
+    /* Line Heights */
+    --line-height-copy: 1.5;
+    --line-height-title: 1.25;
+    --line-height-solid: 1;
+
+    --letter-spacing-tracked: 0.1em;
+    --letter-spacing-negative: -0.05em;
+    --letter-spacing-large: 0.25em;
+
+
+
+    /* Border Radius */
+    --border-radius-0: 0px;
+    --border-radius-1: 2px;
+    --border-radius-2: 4px;
+    --border-radius-3: 6px;
+    --border-radius-4: 8px;
+    --border-radius-5: 12px;
+    --border-radius-6: 16px;
+    --border-radius-7: 24px;
+    --border-radius-8: 32px;
+    --border-radius-9: 9999px;
+
+    --border-width-0: 0px;
+    --border-width-1: 1px;
+    --border-width-2: 2px;
+    --border-width-3: 4px;
+    --border-width-4: 8px;
+
+    /* Box Shadows */
+    --box-shadow-0: none;
+    --box-shadow-1: inset 0 0 0 1px currentColor;
+     --box-shadow-2: 0px 0px 1px 0px rgba(0, 0, 0, 0.125),
+    0px 0px 2px 0px rgba(0, 0, 0, 0.125), 0px 0px 4px 0px rgba(0, 0, 0, 0.125),
+    0px 0px 8px 0px rgba(0, 0, 0, 0.125), 0px 0px 16px 0px rgba(0, 0, 0, 0.125);
+  --box-shadow-3: 0px 0px 1px 0px hsla(0, 0%, 0%, 0.16),
+    0px 0px 2px 0px hsla(0, 0%, 0%, 0.16), 0px 0px 4px 0px hsla(0, 0%, 0%, 0.16),
+    0px 0px 8px 0px hsla(0, 0%, 0%, 0.16);
+  --box-shadow-4: 0px 0px 1px 0px hsla(0, 0%, 0%, 0.07),
+    0px 0px 2px 0px hsla(0, 0%, 0%, 0.07), 0px 0px 4px 0px hsla(0, 0%, 0%, 0.07),
+    0px 0px 8px 0px hsla(0, 0%, 0%, 0.07),
+    0px 0px 16px 0px hsla(0, 0%, 0%, 0.07);
+  --box-shadow-5: 0px 0px 1px 0px rgba(0, 0, 0, 0.25),
+    0px 0px 2px 0px rgba(0, 0, 0, 0.2), 0px 0px 4px 0px rgba(0, 0, 0, 0.15),
+    0px 0px 8px 0px rgba(0, 0, 0, 0.1), 0px 0px 16px 0px rgba(0, 0, 0, 0.05);
+  --box-shadow-6: 0px 1px 2px 0px hsla(0, 0%, 0%, 0.035),
+    0px 2px 4px 0px hsla(0, 0%, 0%, 0.07), 0px 4px 8px 0px hsla(0, 0%, 0%, 0.07),
+    0px 8px 16px 0px hsla(0, 0%, 0%, 0.07),
+    0px 32px 64px 0px hsla(0, 0%, 0%, 0.07);
+
+    /* Inputs */
+    --hue: 224;
+
+    /* Global */
+    --text: var(--gray-0);
+    --background: var(--gray-11);
+    --border-width: var(--border-width-1);
+    --border-color: var(gray-0);
+    --color: hsla(var(--hue), 100%, 42%, 100%);
+    --primary: var(--blue-5);
+    --primary-hover: var(--blue-3);
+
+    --font-size: undefined;
+    --border-radius: undefined;
+    --gradient: undefined;
+
+    --heading-1-font-size: undefined;
+    --heading-2-font-size: undefined;
+    --heading-3-font-size: undefined;
+    --heading-4-font-size: undefined;
+    --heading-5-font-size: undefined;
+    --heading-6-font-size: undefined;
+
+    /* Base Input */
+    --input-font-size: undefined;
+    --input-border-color: undefined;
+    --input-border-radius: undefined;
+    --input-color: undefined;
+
+    --input-color-focus: undefined;
+    --input-border-color-focus: undefined;
+
+    /* Button Component */
+
+    --button-font-size: var(--font-size-2);
+    --button-color: var(--gray-11);
+    --button-background-color: var(--primary);
+    --button-background-color-hover: var(--primary-hover);
+    --button-border-width: var(--border-width);
+    --button-border-radius: var(--border-radius-0);
+    --button-padding-x: var(--scale-3);
+    --button-padding-y: var(--scale-2);
+
+    /* Image */
+    --image-border-radius: var(--border-radius-0);
+
+    /* Label */
+    --label-font-size: var(--font-size-1);
+
+  }
+    </style>
+    <script>
+        window.onload = function() {
+
+            let colorVars = [
+    "--tint-0",
+    "--tint-1",
+    "--tint-2",
+    "--tint-3",
+    "--tint-4",
+    "--tint-5",
+    "--tint-6",
+    "--tint-7",
+    "--tint-8",
+    "--tint-9",
+    "--tint-10",
+    "--tint-11",
+    "--shade-0",
+    "--shade-1",
+    "--shade-2",
+    "--shade-3",
+    "--shade-4",
+    "--shade-5",
+    "--shade-6",
+    "--shade-7",
+    "--shade-8",
+    "--shade-9",
+    "--shade-10",
+    "--shade-11",
+    "--gray-0",
+    "--gray-1",
+    "--gray-2",
+    "--gray-3",
+    "--gray-4",
+    "--gray-5",
+    "--gray-6",
+    "--gray-7",
+    "--gray-8",
+    "--gray-9",
+    "--gray-10",
+    "--gray-11",
+    "--slate-gray-0",
+    "--slate-gray-1",
+    "--slate-gray-2",
+    "--slate-gray-3",
+    "--slate-gray-4",
+    "--slate-gray-5",
+    "--slate-gray-6",
+    "--slate-gray-7",
+    "--slate-gray-8",
+    "--slate-gray-9",
+    "--slate-gray-10",
+    "--slate-gray-11",
+    "--blue-0",
+    "--blue-1",
+    "--blue-2",
+    "--blue-3",
+    "--blue-4",
+    "--blue-5",
+    "--blue-6",
+    "--blue-7",
+    "--blue-8",
+    "--blue-9",
+    "--blue-10",
+    "--blue-11",
+    "--indigo-0",
+    "--indigo-1",
+    "--indigo-2",
+    "--indigo-3",
+    "--indigo-4",
+    "--indigo-5",
+    "--indigo-6",
+    "--indigo-7",
+    "--indigo-8",
+    "--indigo-9",
+    "--indigo-10",
+    "--indigo-11",
+    "--violet-0",
+    "--violet-1",
+    "--violet-2",
+    "--violet-3",
+    "--violet-4",
+    "--violet-5",
+    "--violet-6",
+    "--violet-7",
+    "--violet-8",
+    "--violet-9",
+    "--violet-10",
+    "--violet-11",
+    "--magenta-0",
+    "--magenta-1",
+    "--magenta-2",
+    "--magenta-3",
+    "--magenta-4",
+    "--magenta-5",
+    "--magenta-6",
+    "--magenta-7",
+    "--magenta-8",
+    "--magenta-9",
+    "--magenta-10",
+    "--magenta-11",
+    "--red-0",
+    "--red-1",
+    "--red-2",
+    "--red-3",
+    "--red-4",
+    "--red-5",
+    "--red-6",
+    "--red-7",
+    "--red-8",
+    "--red-9",
+    "--red-10",
+    "--red-11",
+    "--red-orange-0",
+    "--red-orange-1",
+    "--red-orange-2",
+    "--red-orange-3",
+    "--red-orange-4",
+    "--red-orange-5",
+    "--red-orange-6",
+    "--red-orange-7",
+    "--red-orange-8",
+    "--red-orange-9",
+    "--red-orange-10",
+    "--red-orange-11",
+    "--orange-0",
+    "--orange-1",
+    "--orange-2",
+    "--orange-3",
+    "--orange-4",
+    "--orange-5",
+    "--orange-6",
+    "--orange-7",
+    "--orange-8",
+    "--orange-9",
+    "--orange-10",
+    "--orange-11",
+    "--yellow-0",
+    "--yellow-1",
+    "--yellow-2",
+    "--yellow-3",
+    "--yellow-4",
+    "--yellow-5",
+    "--yellow-6",
+    "--yellow-7",
+    "--yellow-8",
+    "--yellow-9",
+    "--yellow-10",
+    "--yellow-11",
+    "--green-0",
+    "--green-1",
+    "--green-2",
+    "--green-3",
+    "--green-4",
+    "--green-5",
+    "--green-6",
+    "--green-7",
+    "--green-8",
+    "--green-9",
+    "--green-10",
+    "--green-11",
+    "--teal-0",
+    "--teal-1",
+    "--teal-2",
+    "--teal-3",
+    "--teal-4",
+    "--teal-5",
+    "--teal-6",
+    "--teal-7",
+    "--teal-8",
+    "--teal-9",
+    "--teal-10",
+    "--teal-11",
+    "--cyan-0",
+    "--cyan-1",
+    "--cyan-2",
+    "--cyan-3",
+    "--cyan-4",
+    "--cyan-5",
+    "--cyan-6",
+    "--cyan-7",
+    "--cyan-8",
+    "--cyan-9",
+    "--cyan-10",
+    "--cyan-11",
+                ]
+            let orderedVars = [
+    "--base-unit",
+    "--scale",
+    "--scale-0",
+    "--scale-1",
+    "--scale-2",
+    "--scale-3",
+    "--scale-4",
+    "--scale-5",
+    "--scale-6",
+    "--scale-7",
+    "--scale-8",
+    "--scale-9",
+    "--font-family-primary",
+    "--font-family-secondary",
+    "--font-family-mono",
+    "--font-size-1",
+    "--font-size-2",
+    "--font-size-3",
+    "--font-size-4",
+    "--font-size-5",
+    "--font-size-6",
+    "--font-size-7",
+    "--font-size-8",
+    "--font-size-9",
+    "--font-size-10",
+    "--font-size-11",
+    "--line-height-copy",
+    "--line-height-title",
+    "--line-height-solid",
+    "--letter-spacing-tracked",
+    "--letter-spacing-negative",
+    "--letter-spacing-large",
+    "--border-radius-0",
+    "--border-radius-1",
+    "--border-radius-2",
+    "--border-radius-3",
+    "--border-radius-4",
+    "--border-radius-5",
+    "--border-radius-6",
+    "--border-radius-7",
+    "--border-radius-8",
+    "--border-radius-9",
+    "--border-width-0",
+    "--border-width-1",
+    "--border-width-2",
+    "--border-width-3",
+    "--border-width-4",
+    "--box-shadow-0",
+    "--box-shadow-1",
+    "--box-shadow-2",
+    "--box-shadow-3",
+    "--box-shadow-4",
+    "--box-shadow-5",
+    "--box-shadow-6",
+    "--hue",
+    "--text",
+    "--background",
+    "--border-width",
+    "--border-color",
+    "--color",
+    "--primary",
+    "--primary-hover",
+    "--font-size",
+    "--border-radius",
+    "--gradient",
+    "--heading-1-font-size",
+    "--heading-2-font-size",
+    "--heading-3-font-size",
+    "--heading-4-font-size",
+    "--heading-5-font-size",
+    "--heading-6-font-size",
+    "--input-font-size",
+    "--input-border-color",
+    "--input-border-radius",
+    "--input-color",
+    "--input-color-focus",
+    "--input-border-color-focus",
+    "--button-font-size",
+    "--button-color",
+    "--button-background-color",
+    "--button-background-color-hover",
+    "--button-border-width",
+    "--button-border-radius",
+    "--button-padding-x",
+    "--button-padding-y",
+    "--image-border-radius",
+    "--label-font-size",
+            ];
+            let form = document.getElementById('cssVarsForm');
+
+ orderedVars.forEach((cssVar) => {
+                let savedValue = localStorage.getItem(cssVar);
+                if (!savedValue) savedValue = getComputedStyle(document.documentElement).getPropertyValue(cssVar).trim();
+
+                let label = document.createElement('label');
+                label.textContent = cssVar;
+                let input = document.createElement('input');
+                input.value = savedValue;
+                
+                if (colorVars.includes(cssVar)) {
+                    input.type = 'color';
+                    if (!savedValue.startsWith('#')) savedValue = convertToHex(savedValue);
+                    input.value = savedValue;
+                }
+                
+                input.addEventListener('input', function() {
+                    let value = this.value;
+                    if (colorVars.includes(cssVar)) value = convertToRGB(value);
+                    document.documentElement.style.setProperty(cssVar, value);
+                    localStorage.setItem(cssVar, value);
+                });
+
+                form.appendChild(label);
+                form.appendChild(input);
+                form.appendChild(document.createElement('br'));
+            });
+        }
+
+        // Function to convert color from RGB to Hex
+        function convertToHex(color) {
+            let rgb = color.match(/\d+/g); // regex match digits
+            let hex = "#" + ((1 << 24) + (parseInt(rgb[0]) << 16) + (parseInt(rgb[1]) << 8) + parseInt(rgb[2])).toString(16).slice(1);
+            return hex;
+        }
+
+        // Function to convert color from Hex to RGB
+        function convertToRGB(hex) {
+            let rgb = [];
+            for (let i = 1; i < hex.length; i += 2) {
+                rgb.push(parseInt(hex.substr(i, 2), 16));
+            }
+            return `rgb(${rgb.join(", ")})`;
+        }
+        
+    </script>
+</head>
+<body>
+    <form id="cssVarsForm">
+        <!-- Form inputs will be added here -->
+    </form>
+    <div id='preview'>
+        This is a sample text to preview design changes.
+    </div>
+</body>
+</html>

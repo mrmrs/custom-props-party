@@ -302,17 +302,17 @@
       }
 
       #editor {
-        max-height: 500px;
+        max-height: 256px;
         font-family: monospace;
         font-size: 8px;
         line-height: 1;
-        border-top: 4px solid orange;
+        border-top: 1px solid white;
         padding: 16px;
         position: sticky;
         bottom: 0;
         left: 0;
         right: 0;
-        box-shadow: -16px 0px 16px 8px white;
+        box-shadow: -16px 0px 16px 8px rgba(0,0,0,.125), -16px 0 48px 12px rgba(0,0,0,.125);
         transition: all .5s ease;
         background-color: rgba(255,255,255,.9);
         overflow-y: scroll;
@@ -403,10 +403,19 @@
 
 </style>
   <body>
-    <main id='preview'>
-      <section>
-          <div style='padding-top: 128px; background:linear-gradient(45deg, var(--blue-4), var(--magenta-5));'></div>
-          <div style='padding-top: 128px; background:linear-gradient(45deg, var(--blue-2), var(--green-4));'></div>
+    <main id='preview' style='padding:32px; display: grid; grid-template-columns: repeat(3,1fr);'>
+      <section style='padding: 16px;display: grid; gap: .5em;'>
+          <div style='border-radius: 9999px; aspect-ratio: 1; padding-top: 32px; background:linear-gradient(45deg, var(--primary), var(--blue-4));'></div>
+          <div style='border-radius: 9999px; aspect-ratio: 1; padding-top: 32px; background:linear-gradient(45deg, var(--primary), var(--indigo-4));'></div>
+          <div style='border-radius: 9999px; aspect-ratio: 1; padding-top: 32px; background:linear-gradient(45deg, var(--primary), var(--violet-4));'></div>
+          <div style='border-radius: 9999px; aspect-ratio: 1; padding-top: 32px; background:linear-gradient(45deg, var(--primary), var(--magenta-4));'></div>
+          <div style='border-radius: 9999px; aspect-ratio: 1; padding-top: 32px; background:linear-gradient(45deg, var(--primary), var(--red-4));'></div>
+          <div style='border-radius: 9999px; aspect-ratio: 1; padding-top: 32px; background:linear-gradient(45deg, var(--primary), var(--red-orange-4));'></div>
+          <div style='border-radius: 9999px; aspect-ratio: 1; padding-top: 32px; background:linear-gradient(45deg, var(--primary), var(--orange-4));'></div>
+          <div style='border-radius: 9999px; aspect-ratio: 1; padding-top: 32px; background:linear-gradient(45deg, var(--primary), var(--yellow-4));'></div>
+          <div style='border-radius: 9999px; aspect-ratio: 1; padding-top: 32px; background:linear-gradient(45deg, var(--primary), var(--green-4));'></div>
+          <div style='border-radius: 9999px; aspect-ratio: 1; padding-top: 32px; background:linear-gradient(45deg, var(--primary), var(--teal-4));'></div>
+          <div style='border-radius: 9999px; aspect-ratio: 1; padding-top: 32px; background:linear-gradient(45deg, var(--primary), var(--cyan-4));'></div>
       </section>
       <section style='padding: 16px;'>
         <h1>Heading level 1</h1>
@@ -416,7 +425,7 @@
         <h5>Heading level 5</h5>
         <h6>Heading level 6</h6>
       </section>
-      <section>
+      <section style='display:none;'>
         <label>
             <span style='display:block;font-size: var(--label-font-size);'>Text input</span>
             <input type='text' value='' />
@@ -426,10 +435,10 @@
             <input type='password' value='**123**129' />
         </label>
       </section>
-      <article style='max-width: 80ch;margin: 0 auto; padding: 32px;'>
+      <article style='padding: 16px; border: var(--border-width) solid var(--border-color);'>
         <img src='https://mrmrs.github.io/photos/u/038.jpg' style='border-radius: var(--image-border-radius); filter:grayscale(100%);mix-blend-mode:multiply; margin-bottom: 16px;'  />
-        <h3 style='font-size: var(--font-size-8); font-weight: 900;'>A headline title</h3>
-        <p style='font-size: var(--font-size-5);line-height: var(--line-height-copy);font-family: var(--font-family-secondary);'>
+        <h3 style='font-size: var(--font-size-5); font-weight: 900;'>A headline title</h3>
+        <p style='font-size: var(--font-size-3);line-height: var(--line-height-copy);font-family: var(--font-family-secondary);'>
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 </p>
 <code style='display: block; margin-bottom: var(--scale-3);'>npm install --save tachyons</code>
@@ -615,6 +624,50 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
     <input type="text" data-variable="--font-family-mono" value="'Courier New', monospace;">
   </label>
     
+    <label>
+      Font size 1
+      <input type="range" data-variable="--font-size-1" data-unit='px' min="1" max="128" step='1' value='10'/>
+    </label>
+    <label>
+      Font size 2
+      <input type="range" data-variable="--font-size-2" data-unit='px' min="1" max="128" step='1' value='12'/>
+    </label>
+    <label>
+      Font size 3
+      <input type="range" data-variable="--font-size-3" data-unit='px' min="1" max="128" step='1' value='14'/>
+    </label>
+    <label>
+      Font size 4
+      <input type="range" data-variable="--font-size-4" data-unit='px' min="1" max="128" step='1' value='16'/>
+    </label>
+    <label>
+      Font size 5
+      <input type="range" data-variable="--font-size-5" data-unit='px' min="1" max="128" step='1' value='20'/>
+    </label>
+    <label>
+      Font size 6
+      <input type="range" data-variable="--font-size-6" data-unit='px' min="1" max="128" step='1' value='24'/>
+    </label>
+    <label>
+      Font size 7
+      <input type="range" data-variable="--font-size-7" data-unit='px' min="1" max="128" step='1' value='32'/>
+    </label>
+    <label>
+      Font size 8
+      <input type="range" data-variable="--font-size-8" data-unit='px' min="1" max="128" step='1' value='48' />
+    </label>
+    <label>
+      Font size 9
+      <input type="range" data-variable="--font-size-9" data-unit='px' min="1" max="128" step='1' value='64' />
+    </label>
+    <label>
+      Font size 10
+      <input type="range" data-variable="--font-size-10" data-unit='px' min="1" max="128" step='1' value='96' />
+    </label>
+    <label>
+      Font size 11
+      <input type="range" data-variable="--font-size-10" data-unit='px' min="1" max="128" step='1' value='128' />
+    </label>
 
     <!-- Base Unit -->
     <label>
@@ -625,7 +678,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
     <!-- Scale -->
     <label>
       Scale Ratio
-      <input type="range" data-variable="--scale" data-unit='number' min="1" max="2" value="2" step='0.1'>
+      <input type="range" data-variable="--scale" data-unit='number' min="1" max="2" value="2" step='0.01'>
     </label>
   </section>
   <section>
@@ -669,85 +722,85 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
     <option value="var(--blue-2)">--blue-2</option>
     <option value="var(--blue-3)">--blue-3</option>
     <option value="var(--blue-4)">--blue-4</option>
-    <option value="var(--blue-5)">--blue-5</option>
+    <option value="var(--blue-5)" selected>--blue-5</option>
     <option value="var(--blue-6)">--blue-6</option>
     <option value="var(--blue-7)">--blue-7</option>
     <option value="var(--blue-8)">--blue-8</option>
     <option value="var(--blue-9)">--blue-9</option>
     <option value="var(--blue-10)">--blue-10</option>
     <option value="var(--blue-11)">--blue-11</option>
-    <option value="var(--indigo-0)">--blue-0</option>
-    <option value="var(--indigo-1)">--blue-1</option>
-    <option value="var(--indigo-2)">--blue-2</option>
-    <option value="var(--indigo-3)">--blue-3</option>
-    <option value="var(--indigo-4)">--blue-4</option>
-    <option value="var(--indigo-5)">--blue-5</option>
-    <option value="var(--indigo-6)">--blue-6</option>
-    <option value="var(--indigo-7)">--blue-7</option>
-    <option value="var(--indigo-8)">--blue-8</option>
-    <option value="var(--indigo-9)">--blue-9</option>
-    <option value="var(--indigo-10)">--blue-10</option>
-    <option value="var(--indigo-11)">--blue-11</option>
-    <option value="var(--violet-0)">--blue-0</option>
-    <option value="var(--violet-1)">--blue-1</option>
-    <option value="var(--violet-2)">--blue-2</option>
-    <option value="var(--violet-3)">--blue-3</option>
-    <option value="var(--violet-4)">--blue-4</option>
-    <option value="var(--violet-5)">--blue-5</option>
-    <option value="var(--violet-6)">--blue-6</option>
-    <option value="var(--violet-7)">--blue-7</option>
-    <option value="var(--violet-8)">--blue-8</option>
-    <option value="var(--violet-9)">--blue-9</option>
-    <option value="var(--violet-10)">--blue-10</option>
-    <option value="var(--violet-11)">--blue-11</option>
-    <option value="var(--magenta-0)">--blue-0</option>
-    <option value="var(--magenta-1)">--blue-1</option>
-    <option value="var(--magenta-2)">--blue-2</option>
-    <option value="var(--magenta-3)">--blue-3</option>
-    <option value="var(--magenta-4)">--blue-4</option>
-    <option value="var(--magenta-5)">--blue-5</option>
-    <option value="var(--magenta-6)">--blue-6</option>
-    <option value="var(--magenta-7)">--blue-7</option>
-    <option value="var(--magenta-8)">--blue-8</option>
-    <option value="var(--magenta-9)">--blue-9</option>
-    <option value="var(--magenta-10)">--blue-10</option>
-    <option value="var(--magenta-11)">--blue-11</option>
-    <option value="var(--red-0)">--blue-0</option>
-    <option value="var(--red-1)">--blue-1</option>
-    <option value="var(--red-2)">--blue-2</option>
-    <option value="var(--red-3)">--blue-3</option>
-    <option value="var(--red-4)">--blue-4</option>
-    <option value="var(--red-5)">--blue-5</option>
-    <option value="var(--red-6)">--blue-6</option>
-    <option value="var(--red-7)">--blue-7</option>
-    <option value="var(--red-8)">--blue-8</option>
-    <option value="var(--red-9)">--blue-9</option>
-    <option value="var(--red-10)">--blue-10</option>
-    <option value="var(--red-11)">--blue-11</option>
-    <option value="var(--red-orange-0)">--blue-0</option>
-    <option value="var(--red-orange-1)">--blue-1</option>
-    <option value="var(--red-orange-2)">--blue-2</option>
-    <option value="var(--red-orange-3)">--blue-3</option>
-    <option value="var(--red-orange-4)">--blue-4</option>
-    <option value="var(--red-orange-5)">--blue-5</option>
-    <option value="var(--red-orange-6)">--blue-6</option>
-    <option value="var(--red-orange-7)">--blue-7</option>
-    <option value="var(--red-orange-8)">--blue-8</option>
-    <option value="var(--red-orange-9)">--blue-9</option>
-    <option value="var(--red-orange-10)">--blue-10</option>
-    <option value="var(--red-orange-11)">--blue-11</option>
-    <option value="var(--orange-0)">--blue-0</option>
-    <option value="var(--orange-1)">--blue-1</option>
-    <option value="var(--orange-2)">--blue-2</option>
-    <option value="var(--orange-3)">--blue-3</option>
-    <option value="var(--orange-4)">--blue-4</option>
-    <option value="var(--orange-5)">--blue-5</option>
-    <option value="var(--orange-6)">--blue-6</option>
-    <option value="var(--orange-7)">--blue-7</option>
-    <option value="var(--orange-8)">--blue-8</option>
-    <option value="var(--orange-9)">--blue-9</option>
-    <option value="var(--orange-10)">--blue-10</option>
-    <option value="var(--orange-11)">--blue-11</option>
+    <option value="var(--indigo-0)">--indigo-0</option>
+    <option value="var(--indigo-1)">--indigo-1</option>
+    <option value="var(--indigo-2)">--indigo-2</option>
+    <option value="var(--indigo-3)">--indigo-3</option>
+    <option value="var(--indigo-4)">--indigo-4</option>
+    <option value="var(--indigo-5)">--indigo-5</option>
+    <option value="var(--indigo-6)">--indigo-6</option>
+    <option value="var(--indigo-7)">--indigo-7</option>
+    <option value="var(--indigo-8)">--indigo-8</option>
+    <option value="var(--indigo-9)">--indigo-9</option>
+    <option value="var(--indigo-10)">--indigo-10</option>
+    <option value="var(--indigo-11)">--indigo-11</option>
+    <option value="var(--violet-0)">--violet-0</option>
+    <option value="var(--violet-1)">--violet-1</option>
+    <option value="var(--violet-2)">--violet-2</option>
+    <option value="var(--violet-3)">--violet-3</option>
+    <option value="var(--violet-4)">--violet-4</option>
+    <option value="var(--violet-5)">--violet-5</option>
+    <option value="var(--violet-6)">--violet-6</option>
+    <option value="var(--violet-7)">--violet-7</option>
+    <option value="var(--violet-8)">--violet-8</option>
+    <option value="var(--violet-9)">--violet-9</option>
+    <option value="var(--violet-10)">--violet-10</option>
+    <option value="var(--violet-11)">--violet-11</option>
+    <option value="var(--magenta-0)">--magenta-0</option>
+    <option value="var(--magenta-1)">--magenta-1</option>
+    <option value="var(--magenta-2)">--magenta-2</option>
+    <option value="var(--magenta-3)">--magenta-3</option>
+    <option value="var(--magenta-4)">--magenta-4</option>
+    <option value="var(--magenta-5)">--magenta-5</option>
+    <option value="var(--magenta-6)">--magenta-6</option>
+    <option value="var(--magenta-7)">--magenta-7</option>
+    <option value="var(--magenta-8)">--magenta-8</option>
+    <option value="var(--magenta-9)">--magenta-9</option>
+    <option value="var(--magenta-10)">--magenta-10</option>
+    <option value="var(--magenta-11)">--magenta-11</option>
+    <option value="var(--red-0)">--red-0</option>
+    <option value="var(--red-1)">--red-1</option>
+    <option value="var(--red-2)">--red-2</option>
+    <option value="var(--red-3)">--red-3</option>
+    <option value="var(--red-4)">--red-4</option>
+    <option value="var(--red-5)">--red-5</option>
+    <option value="var(--red-6)">--red-6</option>
+    <option value="var(--red-7)">--red-7</option>
+    <option value="var(--red-8)">--red-8</option>
+    <option value="var(--red-9)">--red-9</option>
+    <option value="var(--red-10)">--red-10</option>
+    <option value="var(--red-11)">--red-11</option>
+    <option value="var(--red-orange-0)">--red-orange-0</option>
+    <option value="var(--red-orange-1)">--red-orange-1</option>
+    <option value="var(--red-orange-2)">--red-orange-2</option>
+    <option value="var(--red-orange-3)">--red-orange-3</option>
+    <option value="var(--red-orange-4)">--red-orange-4</option>
+    <option value="var(--red-orange-5)">--red-orange-5</option>
+    <option value="var(--red-orange-6)">--red-orange-6</option>
+    <option value="var(--red-orange-7)">--red-orange-7</option>
+    <option value="var(--red-orange-8)">--red-orange-8</option>
+    <option value="var(--red-orange-9)">--red-orange-9</option>
+    <option value="var(--red-orange-10)">--red-orange-10</option>
+    <option value="var(--red-orange-11)">--red-orange-11</option>
+    <option value="var(--orange-0)">--orange-0</option>
+    <option value="var(--orange-1)">--orange-1</option>
+    <option value="var(--orange-2)">--orange-2</option>
+    <option value="var(--orange-3)">--orange-3</option>
+    <option value="var(--orange-4)">--orange-4</option>
+    <option value="var(--orange-5)">--orange-5</option>
+    <option value="var(--orange-6)">--orange-6</option>
+    <option value="var(--orange-7)">--orange-7</option>
+    <option value="var(--orange-8)">--orange-8</option>
+    <option value="var(--orange-9)">--orange-9</option>
+    <option value="var(--orange-10)">--orange-10</option>
+    <option value="var(--orange-11)">--orange-11</option>
     <option value="var(--yellow-0)">--yellow-0</option>
     <option value="var(--yellow-1)">--yellow-1</option>
     <option value="var(--yellow-2)">--yellow-2</option>
@@ -782,7 +835,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
   </label>
   <label>
     Background Color
-    <input type="color" data-variable="--color-background" value="#ffffff" />
+    <input type="color" data-variable="--color-background" title='#ffffff' value='#ffffff' />
   </label>
   <!-- Border Radius -->
   <label>

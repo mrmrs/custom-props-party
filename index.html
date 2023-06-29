@@ -790,13 +790,46 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
     <input type="range" data-variable="--image-border-radius" data-unit='px' min="0" max="64" value="6" step='1' />
   </label>
 
+    <button id='clearStyles'>Reset theme</button>
   </section>
-
 </div>
 <script type='text/javascript'>
 
-
 const inputs = document.querySelectorAll('#editor input, #editor select');
+const clearButton = document.querySelector('#clearStyles');
+
+// Apply saved styles on page load
+const savedStyles = localStorage.getItem('styles');
+if (savedStyles) {
+  document.documentElement.setAttribute('style', savedStyles);
+}
+
+// Clear saved styles when the clear button is clicked
+clearButton.addEventListener('click', function() {
+  localStorage.removeItem('styles');
+  window.location.reload(); // Reload the page to apply the default styles
+});
+
+inputs.forEach(input => {
+  // Get the CSS variable from the data-variable attribute
+  const cssVariable = input.dataset.variable;
+
+  // Get the current computed value of the CSS variable
+  const computedValue = getComputedStyle(document.documentElement).getPropertyValue(cssVariable).trim();
+
+  if (input.tagName === 'SELECT') {
+    // If it's a select input, find the option with the same value and set it as selected
+    for (const option of input.options) {
+      if (option.value === computedValue) {
+        option.selected = true;
+        break;
+      }
+    }
+  } else {
+    // Otherwise, just set the computed value as the input's value
+    input.value = computedValue;
+  }
+});
 
 inputs.forEach(input => {
   input.addEventListener('input', function() {
@@ -811,9 +844,12 @@ inputs.forEach(input => {
 
     // Update the CSS variable
     document.documentElement.style.setProperty(cssVariable, value);
+
+    // Save current styles to localStorage after every change
+    localStorage.setItem('styles', document.documentElement.getAttribute('style'));
   });
 });
-
 </script>
+
 </body> 
 </html>

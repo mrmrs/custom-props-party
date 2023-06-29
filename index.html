@@ -279,6 +279,8 @@
     --label-font-size: var(--font-size-1);
 
   }
+  </style>
+<style>
       img { display: block; max-width: 100%; width: 100%; }
       svg { display: block; max-width: 100%; } 
 
@@ -302,7 +304,7 @@
       #editor {
         max-height: 500px;
         font-family: monospace;
-        font-size: 10px;
+        font-size: 8px;
         line-height: 1;
         border-top: 4px solid orange;
         padding: 16px;
@@ -330,8 +332,8 @@
       }
       #editor input[type=color] {
         box-sizing: border-box;
-        width: 24px;
-        height: 24px;
+        width: 16px;
+        height: 16px;
         margin: 0;
         padding: 0;
         border: 0;
@@ -399,7 +401,7 @@
 
       }
 
-  </style>
+</style>
   <body>
     <main id='preview'>
       <section>
@@ -439,33 +441,8 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 <div id="editor" style='display:flex;gap:8em;'>
   <section>
     <h4 style='margin-bottom: 16px;'>Theme</h4>
-  <!-- Fonts -->
-  <label>
-    Primary Font
-    <input type="text" data-variable="--font-family-primary" value="'Helvetica', sans-serif;">
-  </label>
-
-  <label>
-    Secondary Font
-    <input type="text" data-variable="--font-family-secondary" value="'Georgia', serif;">
-  </label>
-  <label>
-    Monospace
-    <input type="text" data-variable="--font-family-mono" value="'Courier New', monospace;">
-  </label>
-    <!-- Base Unit -->
-    <label>
-      Base Unit
-      <input type="range" data-variable="--base-unit" data-unit='px' min="1" max="32" value="8" step='1' />
-    </label>
-
-    <!-- Scale -->
-    <label>
-      Scale Ratio
-      <input type="range" data-variable="--scale" data-unit='number' min="1" max="2" value="2" step='0.1'>
-    </label>
     <label>Color system</label>
-    <section style='padding-bottom: 32px; display: grid; grid-template-columns: repeat(12, 1fr)'>
+<section style='padding-bottom: 32px; display: grid; grid-template-columns: repeat(12, 1fr)'>
       <input type="color" title="--gray-0" data-variable="--gray-0" value="#000000" />
       <input type="color" title="--gray-1" data-variable="--gray-1" value="#1a1a1a" />
       <input type="color" title="--gray-2" data-variable="--gray-2" value="#353535" />
@@ -623,6 +600,33 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
       <input type="color" title="--cyan-10" data-variable="--cyan-10" value="#ccf7f9" />
       <input type="color" title="--cyan-11" data-variable="--cyan-11" value="#e5ffff" />
     </section>
+  <!-- Fonts -->
+  <label>
+    Primary Font
+    <input type="text" data-variable="--font-family-primary" value="'Helvetica', sans-serif;">
+  </label>
+
+  <label>
+    Secondary Font
+    <input type="text" data-variable="--font-family-secondary" value="'Georgia', serif;">
+  </label>
+  <label>
+    Monospace
+    <input type="text" data-variable="--font-family-mono" value="'Courier New', monospace;">
+  </label>
+    
+
+    <!-- Base Unit -->
+    <label>
+      Base Unit
+      <input type="range" data-variable="--base-unit" data-unit='px' min="1" max="32" value="8" step='1' />
+    </label>
+
+    <!-- Scale -->
+    <label>
+      Scale Ratio
+      <input type="range" data-variable="--scale" data-unit='number' min="1" max="2" value="2" step='0.1'>
+    </label>
   </section>
   <section>
     <h4 style='margin-bottom: 16px;'>Styles</h4>
